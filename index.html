@@ -101,6 +101,21 @@
       }
 
     </style>
+    <!-- Google analytics Start -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-43030080-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+    <!-- Google analytics End -->
   </head>
   <body>
     <!-- Mobile-friendly navbar adapted from example. -->
@@ -189,7 +204,11 @@
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
+            <!-- Preorder Coinbase Button BEGIN -->
+            <a class="coinbase-button" data-code="ecc2611d1553610dddf8cd5ee70df554" 
+              href="https://coinbase.com/checkouts/ecc2611d1553610dddf8cd5ee70df554">Pay With Bitcoin</a>
+            <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+            <!-- Preorder Coinbase Button END -->
           </div>
           </div>
           <div class="row-fluid">
@@ -288,5 +307,17 @@
           </div>
         </div>
       </div>
+      <!-- Google Analytics related Start -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43030080-1', 'herokuapp.com');
+        ga('send', 'pageview');
+
+      </script>
+      <!-- Google Analytics related End -->
     </body>
   </html>
